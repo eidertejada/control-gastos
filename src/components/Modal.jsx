@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import CerrarBtn from "../img/cerrar.svg";
 import Mensaje from "./Mensaje";
-import { generarId } from "../helpers";
+import { generarId, categorias } from "../helpers";
 
 const Modal = ({
   setModal,
@@ -35,16 +35,6 @@ const Modal = ({
       setModal(false);
     }, 500);
   };
-
-  const categorias = [
-    { ahorro: "Ahorro" },
-    { comida: "Comida" },
-    { casa: "Casa" },
-    { gastos: "Gastos" },
-    { ocio: "Ocio" },
-    { salud: "Salud" },
-    { suscripciones: "Suscripciones" },
-  ];
 
   const handleSubmit = (e) => {
     e.preventDefault();

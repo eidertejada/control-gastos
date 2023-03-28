@@ -13,3 +13,13 @@ export const formatearFecha = (fecha) => {
   };
   return fechaNueva.toLocaleDateString("es-ES", opciones);
 };
+
+export const categorias = [
+  { ahorro: "Ahorro" },
+  { comida: "Comida" },
+  { casa: "Casa" },
+  { gastos: "Gastos" },
+  { ocio: "Ocio" },
+  { salud: "Salud" },
+  { suscripciones: "Suscripciones" },
+];
